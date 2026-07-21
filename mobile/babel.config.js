@@ -1,0 +1,10 @@
+module.exports = function(api) {
+  api.cache(true);
+  return {
+    presets: ['babel-preset-expo'],
+    plugins: [
+      ['@react-navigation/bottom-tabs/plugin'],
+      ['module:react-native-dotenv']
+    ]
+  };
+};
